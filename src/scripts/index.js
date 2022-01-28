@@ -1,0 +1,104 @@
+const citiesWrapper = document.querySelector('.cities');
+const cities = [
+    {
+        id:'PL',
+        nameEn:'Poland',
+        namePl:'Polska'
+    },
+    {
+        id:'TM',
+        nameEn:'Turkmenistan',
+        namePl:'Turkmenistan'
+    },
+    {
+        id:'TZ',
+        nameEn:'Tanzania',
+        namePl:'Tanzania'
+    },
+    {
+        id:'IS',
+        nameEn:'Iceland',
+        namePl:'Islandia'
+    },
+    {
+        id:'KW',
+        nameEn:'Kuwait',
+        namePl:'Kuwejt'
+    },
+    {
+        id:'MX',
+        nameEn:'Mexico',
+        namePl:'Meksyk'
+    },
+    {
+        id:'PY',
+        nameEn:'Paraguay',
+        namePl:'Paragwaj'
+    },
+    {
+        id:'VN',
+        nameEn:'Vietnam',
+        namePl:'Wietnam'
+    },
+    {
+        id:'NP',
+        nameEn:'Nepal',
+        namePl:'Nepal'
+    },
+    {
+        id:'MN',
+        nameEn:'Mongolia',
+        namePl:'Mongolia'
+    },
+    {
+        id:'MV',
+        nameEn:'Maledives',
+        namePl:'Malediwy'
+    },
+    {
+        id:'IL',
+        nameEn:'Israel',
+        namePl:'Izrael'
+    },
+    {
+        id:'AT',
+        nameEn:'Austria',
+        namePl:'Austria'
+    },
+    {
+        id:'CO',
+        nameEn:'Colombia',
+        namePl:'Kolumbia'
+    },
+    {
+        id:'EG',
+        nameEn:'Egypt',
+        namePl:'Egipt'
+    },
+    {
+        id:'DE',
+        nameEn:'Germany',
+        namePl:'Niemcy'
+    },
+    {
+        id:'IN',
+        nameEn:'India',
+        namePl:'India'
+    },
+    {
+        id:'ES',
+        nameEn:'Spain',
+        namePl:'Hiszpania'
+    },
+    {
+        id:'TW',
+        nameEn:'Taiwan',
+        namePl:'Tajwan'
+    }
+   
+]
+
+
+console.log(citiesWrapper);
+const citiesMap = cities.map(i => '<li class="city"><a href="#'+i.id+'">'+i.nameEn+'</a></li>');
+citiesWrapper.innerHTML = citiesMap;
